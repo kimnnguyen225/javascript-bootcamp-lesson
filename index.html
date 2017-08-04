@@ -4,16 +4,40 @@
     <script src='index.js' type='text/javascript'></script>
     <script lang='javascript'>
       'use strict';
-        var nbrInBootcamp = 5;
-        var nrbOfInstructors = 2;
-        nrbOfInstructors = 1;
-        // alert(nbrInBootcamp);
-        console.log('count of bootcamp students:', nbrInBootcamp);
-        console.log('count of instructors:', nrbOfInstructors);
-        /** */
+        // function displaytotal(a, b) {
+        //   if(a%2==0) {
+        //     var valueA = (a * a * a)
+        //   } else {
+        //     valueA = (a * a)
+        //   }
+        //   if (b%2==0) {
+			  //        var valueB = (b * b * b)
+		    //   } else {
+			  //          valueB = (b * b)
+		    //   }
+        // console.log("For a= ",a,',', "b = ", b,',', "value = ", valueA * valueB);
+        // }
+        // displaytotal(2, 3);
+        // displaytotal(7, 13);
+        // displaytotal(27, 155);
+        // displaytotal(56, 3450);
+
+        function displayinput(){
+          var inputCtrl = document.getElementById('thetext');
+          // console.log('called displayinput()');
+          var theValue = inputCtrl.value;
+          var outputCtrl = document.getElementById('thetarget')
+          outputCtrl.value = theValue;
+          console.log(theValue);
+        }
     </script>
   </head>
   <body>
-
+    <label>This is a label</label>
+    <input id="thetext" type="text" name="" value="">
+    <button onclick='displayinput()';>Click Me!</button>
+    <p>
+    </p>
+    <input id='thetarget' type='text'/>
   </body>
 </html>

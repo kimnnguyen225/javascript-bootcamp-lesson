@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head><title>Javascript</title>
+    <style>
+    form {
+      text-align: center;
+    }
+    input {
+      text-align: center;
+      }</style>
+    <script src='index.js' type='text/javascript'></script>
+    <script lang='javascript'>
+      'use strict';
+      var i = 0;
+      // chgAmt is passed in when the buttons are clicked
+      function changeNbr(chgAmt) {
+        //get a reference to the <input /> tag
+        var theNbrCtrl = document.getElementById('theNbr');
+        // add the chgAmt number to current i
+        i = i + Number(chgAmt);
+        // put the updated number (i) back in the <input /> tag
+        theNbrCtrl.value = i;
+        // theNbrCtrl.getElementById('theNumber');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <form> -->
+      <button id='minus' onclick='changeNbr(-1)';>-</button>
+      <input size ='5' id='theNbr' type='text' value='0'/>
+      <button id='plus' onclick='changeNbr(1)';>+</button>
+      <!-- <label id='decrement'>L</label> -->
+    <!-- </form> -->
+  </body>
+</html>
