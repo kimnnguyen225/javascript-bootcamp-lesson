@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title></title>
+  <style>
+    body {
+      text-align: center;
+    }
+    input {
+      text-align: center;
+    }
+  </style>
+  <script lang='javascript'>
+    var nbr = 0;
+    function changeStyle(chgAmtOnClick) {
+      var nbrChanged= document.getElementById('nbr');
+      nbr = nbr + Number(chgAmtOnClick);
+      nbrChanged.value = nbr;
+            nbrChanged.style.color='blue';
+            if(nbr%2===0) {
+            nbrChanged.style.color='red';
+            }
+            nbrChanged.style.fontStyle='normal';
+            if(nbr%3===0) {
+            nbrChanged.style.fontStyle = 'italic'
+            }
+            cnbrChanged.style.fontSize='1em';
+            if(nbr%7===0) {
+            nbrChanged.style.fontSize='2.5em'
+            }
+    }
+  </script>
+</head>
+  <body>
+    <button id='minus' onclick='changeStyle(-1)'>-</button>
+    <input id='nbr' type='text' size='5' value='0'/>
+    <button id='plus' onclick='changeStyle(1)'>+</button>
+  </body>
+</html>
